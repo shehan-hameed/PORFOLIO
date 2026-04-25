@@ -12,8 +12,10 @@
   --accent-dim:  rgba(108,99,255,0.15);
   --accent-glow: rgba(24, 255, 166, 0.28);
   --text:        #eeeef5;
-  --text-2:      #d0fef9;
-  --text-3:      #c6f0e3;
+  --text-2:      #ffffff; /* skills buttons*/
+  --text-3:      #d1f9fe;
+  --text-4:      #e9feff; /*  New P text */
+  --text-5:      #36bd90; /* New Schools text */
   --success:     #4ade80;
   --error:       #f87171;
   --nav-h:       66px;
@@ -98,7 +100,7 @@ strong { color: var(--text); }
   background: var(--accent) !important;
   color: #fff !important;
   padding: 6px 16px !important;
-  border-radius: 6px;
+  border-radius: 20px;
   
 }
 .nav-cta::after { display: none !important; }
@@ -129,7 +131,7 @@ strong { color: var(--text); }
   background: var(--accent);
   color: #fff;
   padding: 0.72rem 1.6rem;
-  border-radius: 6px;
+  border-radius: 20px;
   font-weight: 600;
   font-size: 0.88rem;
   border: none;
@@ -149,12 +151,12 @@ strong { color: var(--text); }
   background: transparent;
   color: var(--text-2);
   padding: 0.72rem 1.4rem;
-  border-radius: 6px;
+  border-radius: 20px;
   font-weight: 500;
   font-size: 0.88rem;
   border: 1px solid var(--border-lit);
   cursor: pointer;
-  transition: color 0.2s, border-color 0.2s, transform 0.15s;
+  transition: color 0.5s, border-color 0.5s, transform 0.15s;
 }
 .btn-ghost:hover { color: var(--text); border-color: var(--accent); transform: translateY(-1px); }
 .full-w { width: 100%; justify-content: center; }
@@ -313,8 +315,8 @@ strong { color: var(--text); }
 .about-card:hover { border-color: var(--border-lit); transform: translateY(-2px); }
 .ac-icon { font-size: 1.4rem; margin-bottom: 0.75rem; }
 .about-card h3 { font-family: var(--fh); font-size: 1rem; font-weight: 700; margin-bottom: 0.6rem; }
-.about-card p { color: var(--text-2); font-size: 0.9rem; }
-.about-list { color: var(--text-2); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.4rem; }
+.about-card p { color: var(--text-4); font-size: 0.9rem; }
+.about-list { color: var(--text-4); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.4rem; }
 .about-list li::before { content: '→ '; color: var(--accent); font-weight: 700; }
 
 /* ── SKILLS ── */
@@ -334,7 +336,7 @@ strong { color: var(--text); }
 }
 .skill-tags span:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
-/* ── TIMELINE (Education) ── */
+/* ─ Education ─ */
 .timeline { position: relative; padding-left: 32px; }
 .timeline::before {
   content: '';
@@ -356,7 +358,7 @@ strong { color: var(--text); }
 }
 .tl-period { font-size: 0.78rem; color: var(--accent); font-weight: 600; letter-spacing: 0.5px; display: block; margin-bottom: 0.4rem; }
 .tl-title { font-family: var(--fh); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.3rem; }
-.tl-inst { font-size: 0.88rem; color: var(--text-2); margin-bottom: 0.4rem; }
+.tl-inst { font-size: 0.88rem; color: var(--text-5); margin-bottom: 0.4rem; }
 .tl-desc { font-size: 0.88rem; color: var(--text-3); }
 
 /* ── ACHIEVEMENTS ── */
