@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Shehan Hameed</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="nav-logo">SH<span class="dot">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#achievements">Achievements</a></li>
+        <li><a href="index.html#leadership">Leadership</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="page-top">
+      <div class="container">
+        <span class="sec-tag">Get In Touch</span>
+        <h1 class="page-h1">Contact<span class="dot">.</span></h1>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section class="section">
+      <div class="container contact-layout">
+        <div class="contact-left">
+          <p>
+            Have a question or want to connect? Fill in the form and I'll get
+            back to you.
+          </p>
+          <div class="c-links">
+            <a href="mailto:shehan2005savain@gmail.com" class="c-link"
+              ><span>✉</span> shehan2005savain@gmail.com</a
+            >
+            <a href="tel:+94775524882" class="c-link"
+              ><span>📞</span> +94 775 524 882</a
+            >
+            <a
+              href="https://github.com/shehan-hameed"
+              target="_blank"
+              class="c-link"
+              ><span>💻</span> github.com/shehan-hameed</a
+            >
+            <a
+              href="https://medium.com/@shehan2005savain"
+              target="_blank"
+              class="c-link"
+              ><span>📝</span> Medium Blog</a
+            >
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <div id="success-msg" style="display: none" class="success-box">
+            <div class="s-check">✓</div>
+            <h3>Message received!</h3>
+            <p>Thanks for reaching out. I'll get back to you soon.</p>
+            <button class="btn-ghost" onclick="resetForm()">
+              Send another
+            </button>
+          </div>
+          <form id="contact-form" novalidate>
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="name">Name <span class="req">*</span></label>
+                <input type="text" id="name" placeholder="Your full name" />
+                <span class="err" id="name-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email <span class="req">*</span></label>
+                <input type="email" id="email" placeholder="you@email.com" />
+                <span class="err" id="email-error"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject <span class="req">*</span></label>
+              <input
+                type="text"
+                id="subject"
+                placeholder="What's this about?"
+              />
+              <span class="err" id="subject-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span class="req">*</span></label>
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Your message…"
+              ></textarea>
+              <span class="err" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn-primary full-w">
+              Send Message →
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span class="f-logo">SH<span class="dot">.</span></span>
+        <p>© 2026 Shehan Hameed</p>
+        <a href="index.html" class="f-top">Home ↩</a>
+      </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
