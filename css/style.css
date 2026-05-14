@@ -68,10 +68,7 @@ strong { color: var(--text); }
 }
 
 .nav-links {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
+  display: flex; align-items: center;gap: 1.6rem;}
 
 .nav-links a {
   font-size: 0.83rem;
@@ -356,10 +353,32 @@ strong { color: var(--text); }
   border: 3px solid var(--bg-alt);
   box-shadow: 0 0 0 2px var(--accent);
 }
-.tl-period { font-size: 0.78rem; color: var(--accent); font-weight: 600; letter-spacing: 0.5px; display: block; margin-bottom: 0.4rem; }
-.tl-title { font-family: var(--fh); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.3rem; }
-.tl-inst { font-size: 0.88rem; color: var(--text-5); margin-bottom: 0.4rem; }
-.tl-desc { font-size: 0.88rem; color: var(--text-3); }
+.tl-period {
+  font-size: 0.78rem;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.tl-title {
+  font-family: var(--fh);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.tl-inst {
+  font-size: 0.88rem;
+  color: var(--text-5);
+  margin-bottom: 0.4rem;
+}
+
+.tl-desc {
+  font-size: 0.88rem;
+  color: var(--text-3);
+}
 
 /* ── ACHIEVEMENTS ── */
 .achievements-grid {
@@ -553,7 +572,14 @@ strong { color: var(--text); }
 }
 
 @media (max-width: 860px) {
-  .hero { flex-direction: column; text-align: center; align-items: center; padding-top: calc(var(--nav-h) + 40px); min-height: auto; padding-bottom: 60px; }
+  .hero {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      padding-top: calc(var(--nav-h) + 40px);
+      min-height: auto;
+      padding-bottom: 60px;
+    }  
   .hero-bio { margin-inline: auto; }
   .hero-btns { justify-content: center; }
   .hero-glow, .hero-glow-2 { display: none; }
